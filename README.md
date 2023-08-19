@@ -1,3 +1,3 @@
 # Grandroid
 
-Android with gRPC
+Android with gRPC API
