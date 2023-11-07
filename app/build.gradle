@@ -33,6 +33,7 @@ android {
         textReport true
         textOutput "stdout"
     }
+    namespace 'com.kimikevin.grandroid'
 }
 
 protobuf {
