@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.kimikevin.grandroid'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.kimikevin.grandroid"
         minSdk 30
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -38,7 +38,7 @@ android {
 protobuf {
     protoc { artifact = 'com.google.protobuf:protoc:3.22.3' }
     plugins {
-        grpc { artifact = 'io.grpc:protoc-gen-grpc-java:1.57.2' // CURRENT_GRPC_VERSION
+        grpc { artifact = 'io.grpc:protoc-gen-grpc-java:1.59.0' // CURRENT_GRPC_VERSION
         }
     }
     generateProtoTasks {
@@ -54,18 +54,26 @@ protobuf {
     }
 }
 
+repositories {
+    google()
+    mavenCentral()
+}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // You need to build grpc-java to obtain these libraries below.
-    implementation 'io.grpc:grpc-okhttp:1.57.2' // CURRENT_GRPC_VERSION
-    implementation 'io.grpc:grpc-protobuf-lite:1.57.2' // CURRENT_GRPC_VERSION
-    implementation 'io.grpc:grpc-stub:1.57.2' // CURRENT_GRPC_VERSION
+    api project(':grpc-core')
+    implementation 'io.grpc:grpc-okhttp:1.59.0' // CURRENT_GRPC_VERSION
+    implementation 'io.grpc:grpc-protobuf-lite:1.59.0' // CURRENT_GRPC_VERSION
+    implementation 'io.grpc:grpc-stub:1.59.0' // CURRENT_GRPC_VERSION
     implementation 'org.apache.tomcat:annotations-api:6.0.53'
+//    compileOnly 'org.apache.tomcat:annotations-api:6.0.53'
     testImplementation 'junit:junit:4.13.2'
+    testImplementation project('::grpc-okhttp')
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
