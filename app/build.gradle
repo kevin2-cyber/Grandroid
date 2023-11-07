@@ -54,10 +54,10 @@ protobuf {
     }
 }
 
-repositories {
-    google()
-    mavenCentral()
-}
+//repositories {
+//    google()
+//    mavenCentral()
+//}
 
 dependencies {
 
@@ -66,14 +66,14 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // You need to build grpc-java to obtain these libraries below.
-    api project(':grpc-core')
+//    api project(':grpc-core')
     implementation 'io.grpc:grpc-okhttp:1.59.0' // CURRENT_GRPC_VERSION
     implementation 'io.grpc:grpc-protobuf-lite:1.59.0' // CURRENT_GRPC_VERSION
     implementation 'io.grpc:grpc-stub:1.59.0' // CURRENT_GRPC_VERSION
     implementation 'org.apache.tomcat:annotations-api:6.0.53'
 //    compileOnly 'org.apache.tomcat:annotations-api:6.0.53'
     testImplementation 'junit:junit:4.13.2'
-    testImplementation project('::grpc-okhttp')
+//    testImplementation project('::grpc-okhttp')
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
