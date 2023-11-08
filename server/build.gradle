@@ -3,6 +3,7 @@ plugins {
     id 'com.google.protobuf' version '0.9.4'
     // Generate IntelliJ IDEA's .idea & .iml project files
     id 'idea'
+    id 'distribution'
 }
 
 group = 'com.kimikevin'
