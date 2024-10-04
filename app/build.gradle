@@ -28,12 +28,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    lintOptions {
-        disable 'GoogleAppIndexingWarning', 'HardcodedText', 'InvalidPackage'
-        textReport true
-        textOutput "stdout"
-    }
     namespace 'com.kimikevin.grandroid'
+    lint {
+        disable 'GoogleAppIndexingWarning', 'HardcodedText', 'InvalidPackage'
+        textOutput file('stdout')
+        textReport true
+    }
 }
 
 protobuf {
