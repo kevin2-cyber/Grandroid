@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de5d72a5-5e9e-438a-b2a9-9babbfcc10bc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="de5d72a5-5e9e-438a-b2a9-9babbfcc10bc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,6 +145,7 @@
       <workItem from="1728742445755" duration="6627000" />
       <workItem from="1728751313010" duration="63000" />
       <workItem from="1728751748503" duration="204000" />
+      <workItem from="1728751973386" duration="79000" />
     </task>
     <servers />
   </component>
