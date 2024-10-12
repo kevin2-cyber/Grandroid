@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.kimikevin.grpc.app-mergeDebugResources-29:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/kimi-kevin/.gradle/caches/8.9/transforms/611cac7e5121cbc4e655734745fa1c86/transformed/material-1.12.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

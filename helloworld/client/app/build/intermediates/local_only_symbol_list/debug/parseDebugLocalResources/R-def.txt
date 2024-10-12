@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id grpc_response_text
+id host_edit_text
+id main
+id message_edit_text
+id port_edit_text
+id send_button
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.GRPC
+style Theme.GRPC
+xml backup_rules
+xml data_extraction_rules
