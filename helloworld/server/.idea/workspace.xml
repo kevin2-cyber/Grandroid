@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaab549a-126c-4338-b979-3c142bcc5712" name="Changes" comment="" />
+    <list default="true" id="eaab549a-126c-4338-b979-3c142bcc5712" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,6 +141,7 @@
       <workItem from="1728740979541" duration="186000" />
       <workItem from="1728751777333" duration="162000" />
       <workItem from="1728751961517" duration="194000" />
+      <workItem from="1728752158980" duration="142000" />
     </task>
     <servers />
   </component>

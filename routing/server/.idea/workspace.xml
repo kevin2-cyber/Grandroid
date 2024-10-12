@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de5d72a5-5e9e-438a-b2a9-9babbfcc10bc" name="Changes" comment="" />
+    <list default="true" id="de5d72a5-5e9e-438a-b2a9-9babbfcc10bc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,6 +155,7 @@
       <workItem from="1728751313010" duration="63000" />
       <workItem from="1728751748503" duration="204000" />
       <workItem from="1728751973386" duration="79000" />
+      <workItem from="1728752304109" duration="6000" />
     </task>
     <servers />
   </component>
