@@ -4,17 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaab549a-126c-4338-b979-3c142bcc5712" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../routing/client/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="de5d72a5-5e9e-438a-b2a9-9babbfcc10bc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../helloworld/server/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +63,6 @@
                 <item name="server" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="server" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -57,39 +70,52 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2nCJbPVnTcGhNA2K0XdG9cx6cfx" />
+  <component name="ProjectId" id="2nLBOINOb96rhApf6REWgrrOYgY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Gradle.server [:com.kimikevin.HelloWorldServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.server [:com.kimikevin.RouteGuideBackend.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.server [generateProto].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;bug&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kimi-kevin/Desktop/github/Grandroid/helloworld/server&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.HelloWorldServer">
-    <configuration name="HelloWorldServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kimikevin.HelloWorldServer" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com.kimikevin" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/proto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RouteGuideBackend">
+    <configuration name="RouteGuideBackend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kimikevin.RouteGuideBackend" />
       <module name="server.main" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +152,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.server [generateProto]" />
-        <item itemvalue="Application.HelloWorldServer" />
+        <item itemvalue="Application.RouteGuideBackend" />
       </list>
     </recent_temporary>
   </component>
@@ -141,17 +167,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eaab549a-126c-4338-b979-3c142bcc5712" name="Changes" comment="" />
-      <created>1716328831819</created>
+      <changelist id="de5d72a5-5e9e-438a-b2a9-9babbfcc10bc" name="Changes" comment="" />
+      <created>1728742443146</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716328831819</updated>
-      <workItem from="1716328834854" duration="74000" />
-      <workItem from="1716638559939" duration="1000" />
-      <workItem from="1728471195288" duration="1828000" />
-      <workItem from="1728737633706" duration="2613000" />
-      <workItem from="1728740979541" duration="186000" />
-      <workItem from="1728751777333" duration="162000" />
+      <updated>1728742443146</updated>
+      <workItem from="1728742445755" duration="6627000" />
+      <workItem from="1728751313010" duration="63000" />
+      <workItem from="1728751748503" duration="204000" />
     </task>
     <servers />
   </component>
