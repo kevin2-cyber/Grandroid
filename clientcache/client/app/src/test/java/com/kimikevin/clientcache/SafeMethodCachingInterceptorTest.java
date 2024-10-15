@@ -470,7 +470,7 @@ public class SafeMethodCachingInterceptorTest {
         assertSame(reply1, reply2);
 
         // Wait for cache entry to expire
-        sleepAtLeast(1001);
+        sleepAtLeast();
 
         assertNotEquals(
                 reply1,
@@ -512,7 +512,7 @@ public class SafeMethodCachingInterceptorTest {
         assertEquals(reply1, reply2);
 
         // Wait for cache entry to expire
-        sleepAtLeast(1001);
+        sleepAtLeast();
 
         assertNotEquals(
                 reply1,
@@ -573,7 +573,7 @@ public class SafeMethodCachingInterceptorTest {
                         message
                 );
 
-        sleepAtLeast(1001);
+        sleepAtLeast();
 
         HelloReply reply3 =
                 ClientCalls.blockingUnaryCall(
@@ -612,7 +612,7 @@ public class SafeMethodCachingInterceptorTest {
         assertSame(reply1, reply2);
 
         // Wait for cache entry to expire
-        sleepAtLeast(1001);
+        sleepAtLeast();
 
         assertNotEquals(
                 reply1,
@@ -686,8 +686,8 @@ public class SafeMethodCachingInterceptorTest {
         assertNotEquals(reply1, reply2);
     }
 
-    private static void sleepAtLeast(long millis) throws InterruptedException {
-        long delay = TimeUnit.MILLISECONDS.toNanos(millis);
+    private static void sleepAtLeast() throws InterruptedException {
+        long delay = TimeUnit.MILLISECONDS.toNanos(1001);
         long end = System.nanoTime() + delay;
         while (delay > 0) {
             TimeUnit.NANOSECONDS.sleep(delay);
