@@ -1,0 +1,81 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.protobuf' version '0.9.4'
+}
+
+android {
+    namespace 'com.kimikevin.clientcache'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.kimikevin.clientcache"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        disable 'GoogleAppIndexingWarning', 'HardcodedText', 'InvalidPackage'
+        textOutput file('stdout')
+        textReport true
+    }
+
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.25.1'
+        plugins {
+            grpc {
+                artifact = 'io.grpc:protoc-gen-grpc-java:1.68.0'
+            }
+        }
+        generateProtoTasks {
+            all().each { task ->
+                task.builtins {
+                    java {
+                        option 'lite'
+                    }
+                }
+                task.plugins {
+                    grpc {
+                        option 'lite'
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    // You need to build grpc-java to obtain these libraries below.
+    implementation libs.grpc.okhttp // CURRENT_GRPC_VERSION
+    implementation libs.grpc.protobuf.lite // CURRENT_GRPC_VERSION
+    implementation libs.grpc.stub // CURRENT_GRPC_VERSION
+    implementation libs.annotations.api
+    testImplementation libs.junit
+    testImplementation libs.truth
+    testImplementation libs.grpc.testing
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
