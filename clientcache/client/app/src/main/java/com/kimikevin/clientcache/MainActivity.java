@@ -91,7 +91,7 @@ public final class MainActivity extends AppCompatActivity {
         private ManagedChannel channel;
 
         private GrpcTask(Activity activity, SafeMethodCachingInterceptor.Cache cache) {
-            this.activityReference = new WeakReference<Activity>(activity);
+            this.activityReference = new WeakReference<>(activity);
             this.cache = cache;
         }
 
@@ -155,8 +155,8 @@ public final class MainActivity extends AppCompatActivity {
             if (activity == null) {
                 return;
             }
-            TextView resultText = (TextView) activity.findViewById(R.id.grpc_response_text);
-            Button sendButton = (Button) activity.findViewById(R.id.send_button);
+            TextView resultText = activity.findViewById(R.id.grpc_response_text);
+            Button sendButton = activity.findViewById(R.id.send_button);
             resultText.setText(result);
             sendButton.setEnabled(true);
         }
