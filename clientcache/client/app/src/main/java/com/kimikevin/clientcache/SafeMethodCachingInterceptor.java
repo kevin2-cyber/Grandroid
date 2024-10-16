@@ -22,9 +22,9 @@ import io.grpc.MethodDescriptor;
 import io.grpc.Status;
 
 final class SafeMethodCachingInterceptor implements ClientInterceptor {
-    static CallOptions.Key<Boolean> NO_CACHE_CALL_OPTION = CallOptions.Key.of("no-cache", false);
+    static CallOptions.Key<Boolean> NO_CACHE_CALL_OPTION = CallOptions.Key.createWithDefault("no-cache", false);
     static CallOptions.Key<Boolean> ONLY_IF_CACHED_CALL_OPTION =
-            CallOptions.Key.of("only-if-cached", false);
+            CallOptions.Key.createWithDefault("only-if-cached", false);
 
     private static final String TAG = "grpcCacheExample";
 
@@ -124,6 +124,7 @@ final class SafeMethodCachingInterceptor implements ClientInterceptor {
     }
 
     public static SafeMethodCachingInterceptor newSafeMethodCachingInterceptor(Cache cache) {
+        int DEFAULT_MAX_AGE_SECONDS = 3600;
         return newSafeMethodCachingInterceptor(cache, DEFAULT_MAX_AGE_SECONDS);
     }
 
@@ -131,8 +132,6 @@ final class SafeMethodCachingInterceptor implements ClientInterceptor {
             Cache cache, int defaultMaxAge) {
         return new SafeMethodCachingInterceptor(cache, defaultMaxAge);
     }
-
-    private static int DEFAULT_MAX_AGE_SECONDS = 3600;
 
     private static final Metadata.Key<String> CACHE_CONTROL_KEY =
             Metadata.Key.of("cache-control", Metadata.ASCII_STRING_MARSHALLER);
