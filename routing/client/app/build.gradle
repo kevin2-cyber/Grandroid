@@ -27,12 +27,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    lintOptions {
+    lint {
         disable 'GoogleAppIndexingWarning', 'HardcodedText', 'InvalidPackage'
+        textOutput file('stdout')
         textReport true
-        textOutput "stdout"
     }
+
 }
 
 protobuf {

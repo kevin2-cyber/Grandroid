@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.0"
+agp = "8.7.1"
 junit = "4.13.2"
 annotationsApi = "6.0.53"
 grpcOkhttp = "1.68.0"
