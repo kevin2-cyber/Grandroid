@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         private ManagedChannel channel;
 
         private GrpcTask(Activity activity) {
-            this.activityReference = new WeakReference<Activity>(activity);
+            this.activityReference = new WeakReference<>(activity);
         }
 
         @Override
@@ -131,15 +131,15 @@ public class MainActivity extends AppCompatActivity {
             if (activity == null) {
                 return;
             }
-            TextView resultText = (TextView) activity.findViewById(R.id.grpc_response_text);
-            Button sendButton = (Button) activity.findViewById(R.id.send_button);
+            TextView resultText = activity.findViewById(R.id.grpc_response_text);
+            Button sendButton = activity.findViewById(R.id.send_button);
             resultText.setText(result);
             sendButton.setEnabled(true);
         }
     }
 
     private static class NetworkTaggingExecutor extends ThreadPoolExecutor {
-        private int trafficStatsTag;
+        private final int trafficStatsTag;
 
         NetworkTaggingExecutor(int tag) {
             super(
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                     Integer.MAX_VALUE,
                     60L,
                     TimeUnit.SECONDS,
-                    new SynchronousQueue<Runnable>(),
+                    new SynchronousQueue<>(),
                     new ThreadFactoryBuilder().setDaemon(true).setNameFormat("grpc-android-%d").build());
             trafficStatsTag = tag;
         }
