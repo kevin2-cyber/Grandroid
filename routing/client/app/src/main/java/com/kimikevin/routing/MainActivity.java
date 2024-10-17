@@ -187,18 +187,17 @@ public class MainActivity extends AppCompatActivity {
 
     private static class GetFeatureRunnable implements GrpcRunnable {
         @Override
-        public String run(RouteGuideGrpc.RouteGuideBlockingStub blockingStub, RouteGuideGrpc.RouteGuideStub asyncStub)
-                throws Exception {
-            return getFeature(409146138, -746188906, blockingStub);
+        public String run(RouteGuideGrpc.RouteGuideBlockingStub blockingStub, RouteGuideGrpc.RouteGuideStub asyncStub) {
+            return getFeature(blockingStub);
         }
 
         /** Blocking unary call example. Calls getFeature and prints the response. */
-        private String getFeature(int lat, int lon, RouteGuideGrpc.RouteGuideBlockingStub blockingStub)
+        private String getFeature(RouteGuideGrpc.RouteGuideBlockingStub blockingStub)
                 throws StatusRuntimeException {
             StringBuffer logs = new StringBuffer();
-            appendLogs(logs, "*** GetFeature: lat={0} lon={1}", lat, lon);
+            appendLogs(logs, "*** GetFeature: lat={0} lon={1}", 409146138, -746188906);
 
-            Point request = Point.newBuilder().setLatitude(lat).setLongitude(lon).build();
+            Point request = Point.newBuilder().setLatitude(409146138).setLongitude(-746188906).build();
 
             Feature feature;
             feature = blockingStub.getFeature(request);
@@ -222,9 +221,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static class ListFeaturesRunnable implements GrpcRunnable {
         @Override
-        public String run(RouteGuideGrpc.RouteGuideBlockingStub blockingStub, RouteGuideGrpc.RouteGuideStub asyncStub)
-                throws Exception {
-            return listFeatures(400000000, -750000000, 420000000, -730000000, blockingStub);
+        public String run(RouteGuideGrpc.RouteGuideBlockingStub blockingStub, RouteGuideGrpc.RouteGuideStub asyncStub) {
+            return listFeatures(blockingStub);
         }
 
         /**
@@ -232,21 +230,21 @@ public class MainActivity extends AppCompatActivity {
          * each response feature as it arrives.
          */
         private String listFeatures(
-                int lowLat, int lowLon, int hiLat, int hiLon, RouteGuideGrpc.RouteGuideBlockingStub blockingStub)
+                RouteGuideGrpc.RouteGuideBlockingStub blockingStub)
                 throws StatusRuntimeException {
             StringBuffer logs = new StringBuffer("Result: ");
             appendLogs(
                     logs,
                     "*** ListFeatures: lowLat={0} lowLon={1} hiLat={2} hiLon={3}",
-                    lowLat,
-                    lowLon,
-                    hiLat,
-                    hiLon);
+                    400000000,
+                    -750000000,
+                    420000000,
+                    -730000000);
 
             Rectangle request =
                     Rectangle.newBuilder()
-                            .setLo(Point.newBuilder().setLatitude(lowLat).setLongitude(lowLon).build())
-                            .setHi(Point.newBuilder().setLatitude(hiLat).setLongitude(hiLon).build())
+                            .setLo(Point.newBuilder().setLatitude(400000000).setLongitude(-750000000).build())
+                            .setHi(Point.newBuilder().setLatitude(420000000).setLongitude(-730000000).build())
                             .build();
             Iterator<Feature> features;
             features = blockingStub.listFeatures(request);
@@ -269,7 +267,7 @@ public class MainActivity extends AppCompatActivity {
             points.add(Point.newBuilder().setLatitude(407838351).setLongitude(-746143763).build());
             points.add(Point.newBuilder().setLatitude(408122808).setLongitude(-743999179).build());
             points.add(Point.newBuilder().setLatitude(413628156).setLongitude(-749015468).build());
-            return recordRoute(points, 5, asyncStub);
+            return recordRoute(points, asyncStub);
         }
 
         /**
@@ -277,7 +275,7 @@ public class MainActivity extends AppCompatActivity {
          * features} with a variable delay in between. Prints the statistics when they are sent from the
          * server.
          */
-        private String recordRoute(List<Point> points, int numPoints, RouteGuideGrpc.RouteGuideStub asyncStub)
+        private String recordRoute(List<Point> points, RouteGuideGrpc.RouteGuideStub asyncStub)
                 throws InterruptedException, RuntimeException {
             final StringBuffer logs = new StringBuffer();
             appendLogs(logs, "*** RecordRoute");
@@ -314,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 // Send numPoints points randomly selected from the points list.
                 Random rand = new Random();
-                for (int i = 0; i < numPoints; ++i) {
+                for (int i = 0; i < 5; ++i) {
                     int index = rand.nextInt(points.size());
                     Point point = points.get(index);
                     appendLogs(
@@ -326,7 +324,7 @@ public class MainActivity extends AppCompatActivity {
                     // Sleep for a bit before sending the next one.
                     Thread.sleep(rand.nextInt(1000) + 500);
                     if (finishLatch.getCount() == 0) {
-                        // RPC completed or errored before we finished sending.
+                        // RPC completed or error before we finished sending.
                         // Sending further requests won't error, but they will just be thrown away.
                         break;
                     }
